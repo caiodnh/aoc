@@ -1,0 +1,10 @@
+name:                day05
+
+dependencies:
+  - base >= 4.7 && < 5
+  - vector
+
+executables:
+  day05:
+    source-dirs:      src
+    main:             Main.hs

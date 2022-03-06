@@ -1,0 +1,40 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 00a9781ba6ace1fb4b041b61b1eeef1745031028ec4ce8b99630ed798be27709
+
+name:           day23
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/githubuser/day23#readme
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable day23
+  main-is: Main.hs
+  other-modules:
+      Circle
+      CircleMap
+      CircleMut
+      CircleVector
+      CircleVectorMut
+      Time
+      Paths_day23
+  hs-source-dirs:
+      src
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , containers
+    , primitive
+    , vector
+  default-language: Haskell2010

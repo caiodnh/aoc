@@ -1,0 +1,28 @@
+{-# START_FILE package.yaml #-}
+name:                {{name}}
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  {{name}}:
+    source-dirs:      src
+    main:             Main.hs
+
+{-# START_FILE Setup.hs #-}
+import Distribution.Simple
+main = defaultMain
+
+{-# START_FILE src/Main.hs #-}
+module Main where
+
+main :: IO ()
+main = putStrLn "{{name}}"
+
+{-# START_FILE hie.yaml #-}
+cradle:
+  stack:
+
+{-# START_FILE input/example.txt #-}
+
+{-# START_FILE input/actual.txt #-}

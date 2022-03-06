@@ -1,0 +1,22 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c4373ad3efa86db52895e07765823467f1a0a29b747bebc5e02c8bb4eebabbca
+
+name:           day05
+version:        0.0.0
+build-type:     Simple
+
+executable day05
+  main-is: Main.hs
+  other-modules:
+      Paths_day05
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , vector
+  default-language: Haskell2010
