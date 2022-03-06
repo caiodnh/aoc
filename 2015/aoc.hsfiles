@@ -1,0 +1,59 @@
+{-# START_FILE package.yaml #-}
+name:                {{name}}
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  {{name}}:
+    source-dirs:      src
+    main:             Main.hs
+
+{-# START_FILE hie.yaml #-}
+cradle:
+  stack:
+
+{-# START_FILE Setup.hs #-}
+import Distribution.Simple
+main = defaultMain
+
+{-# START_FILE src/PartA.hs #-}
+module PartA where
+
+parseInput :: String -> String
+parseInput = undefined
+
+solveA :: String -> String
+solveA = undefined
+
+{-# START_FILE src/PartB.hs #-}
+module PartB where
+
+import qualified PartA as A
+
+solveB :: String -> String
+solveB = undefined
+
+{-# START_FILE src/Main.hs #-}
+module Main where
+
+import PartA (parseInput, solveA)
+import PartB (solveB)
+
+solve x = case x of
+  "a" -> solveA
+  "A" -> solveA
+  "b" -> solveB
+  "B" -> solveB
+  _   -> error "Entry can only be A or B."
+
+run :: String -> IO ()
+run x = readFile "input.txt" >>= print . solve x . parseInput
+
+main :: IO ()
+main = do
+  putStrLn "Which part of the problem?"
+  x <- getLine
+  run x
+
+{-# START_FILE input.txt #-}

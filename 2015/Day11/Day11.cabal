@@ -1,0 +1,23 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           Day11
+version:        0.1
+author:         Seno
+maintainer:     Seno
+build-type:     Simple
+
+executable Day11
+  main-is: Main.hs
+  other-modules:
+      PartA
+      PartB
+      Paths_Day11
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010

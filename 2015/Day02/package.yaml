@@ -1,0 +1,13 @@
+name:                Day02
+version:             0.1
+author:              Seno
+
+dependencies:
+  - base >= 4.7 && < 5
+  - mtl
+
+executables:
+  Day02:
+    source-dirs:      src
+    main:             Main.hs
+

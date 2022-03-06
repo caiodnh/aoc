@@ -1,0 +1,13 @@
+name:                Day03
+version:             0.1
+author:              Seno
+
+dependencies:
+  - base >= 4.7 && < 5
+  - containers
+
+executables:
+  Day03:
+    source-dirs:      src
+    main:             Main.hs
+
